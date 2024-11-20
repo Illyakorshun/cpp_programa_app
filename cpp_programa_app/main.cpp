@@ -6,10 +6,21 @@
 using namespace std;
 
 int main() {
-	while (true)
-	{
+	int a, b = 20;
+	cout << "Enter: ";
+	cin >> a;
 
+	if (a > b) {
+		cout << "a > b" << endl;
 	}
+	else if (a < b) {
+		cout << "a < b" << endl;
+	}
+	else {
+		cout << "a = b" << endl;
+	}
+
+
 
 	return 0;
 }
