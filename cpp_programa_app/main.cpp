@@ -6,10 +6,10 @@
 using namespace std;
 
 int main() {
-	while (true)
-	{
-
-	}
+		for (size_t i = 0, j = 0; i < 10 && j % 2 == 0; i++, j+=2) 
+		{
+			cout << i << "x" << j << "=" << i * j << endl;
+		}
 
 	return 0;
 }
