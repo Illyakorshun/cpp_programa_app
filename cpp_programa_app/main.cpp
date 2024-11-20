@@ -1,15 +1,21 @@
 #include <iostream>
-#include "conio.h"
-#include "windows.h"
-#include "Windows.h"
 
 using namespace std;
 
 int main() {
-	while (true)
-	{
+    int x, y;
+    cout << "Enter x: ";
+    cin >> x;
+    cout << "Enter y: ";
+    cin >> y;
 
-	}
+    int result = 1;
+    for (int i = 0; i < y; ++i) {
+        result *= x;
+    }
 
-	return 0;
+    cout << x << " in stepen " << y << " = " << result << endl;
+
+    return 0;
 }
+
