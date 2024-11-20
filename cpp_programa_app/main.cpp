@@ -1,15 +1,19 @@
 #include <iostream>
-#include "conio.h"
-#include "windows.h"
-#include "Windows.h"
 
 using namespace std;
 
 int main() {
-	while (true)
-	{
+    int sum = 0;
+    int count = 1000;
 
-	}
+    for (int i = 1; i <= count; ++i) {
+        sum += i;
+    }
 
-	return 0;
+    double su = static_cast<double>(sum) / count;
+
+    cout << "Chislo arefmetichne vid 1 do 1000: " << su << endl;
+
+    return 0;
 }
+
