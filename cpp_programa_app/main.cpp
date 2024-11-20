@@ -1,15 +1,26 @@
 #include <iostream>
-#include "conio.h"
-#include "windows.h"
-#include "Windows.h"
 
 using namespace std;
 
 int main() {
-	while (true)
-	{
+    int a, b, tmp;
+    cout << "Enter 1: ";
+    cin >> a;
+    cout << "Enter 2: ";
+    cin >> b;
 
-	}
+	if (a > b) {
+        tmp = a;
+		a = b;
+		b = tmp;
+    }
 
-	return 0;
+    int sum = 0;
+    for (int i = a; i <= b; ++i) {
+        sum += i;
+    }
+
+    cout << "all suma: " << sum << endl;
+
+    return 0;
 }
